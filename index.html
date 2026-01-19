@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Materiais da Disciplina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-gray-200">
+
+  <!-- NAVBAR -->
+  <header class="bg-red-700 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+      <!-- LOGO / FOTO -->
+      <div class="flex items-center space-x-3">
+        <img
+          src="foto-professor.jpg"
+          alt="Foto do Professor"
+          class="w-10 h-10 rounded-full object-cover border-2 border-white"
+        />
+        <span class="font-bold text-lg">Materiais da Disciplina</span>
+      </div>
+
+      <!-- BOTÃO MOBILE -->
+      <button
+        id="menuBtn"
+        class="md:hidden focus:outline-none text-2xl"
+      >
+        ☰
+      </button>
+
+      <!-- MENU DESKTOP -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#aulas" class="hover:text-gray-300">Aulas</a>
+        <a href="#trabalhos" class="hover:text-gray-300">Trabalhos</a>
+        <a href="#extras" class="hover:text-gray-300">Extras</a>
+        <a href="#contato" class="hover:text-gray-300">Contato</a>
+      </nav>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <nav
+      id="mobileMenu"
+      class="hidden md:hidden bg-red-800 px-4 pb-4 space-y-2"
+    >
+      <a href="#aulas" class="block hover:text-gray-300">Aulas</a>
+      <a href="#trabalhos" class="block hover:text-gray-300">Trabalhos</a>
+      <a href="#extras" class="block hover:text-gray-300">Extras</a>
+      <a href="#contato" class="block hover:text-gray-300">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-b from-black to-red-900">
+    <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center gap-6">
+      <img
+        src="foto-professor.jpg"
+        alt="Foto do Professor"
+        class="w-32 h-32 md:w-40 md:h-40 rounded-lg object-cover border-4 border-red-600 shadow-lg"
+      />
+
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-2">Bem-vindo(a)!</h2>
+        <p class="text-gray-300 max-w-xl">
+          Aqui você encontra todos os <strong>materiais da disciplina</strong>
+          organizados para download.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <main class="max-w-7xl mx-auto px-4 py-10 space-y-14">
+
+    <!-- AULAS -->
+    <section id="aulas">
+      <h2 class="text-2xl font-bold text-red-500 mb-6">📂 Aulas</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+          <h3 class="text-xl font-semibold mb-4">📘 Aula 01 – Introdução</h3>
+          <div class="space-y-3">
+            <a href="arquivos/aula01-slides.pdf"
+               class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
+              📄 Slides (PDF)
+            </a>
+            <a href="arquivos/aula01-exercicios.pdf"
+               class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
+              📝 Exercícios (PDF)
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+          <h3 class="text-xl font-semibold mb-4">📘 Aula 02 – Conteúdo Principal</h3>
+          <div class="space-y-3">
+            <a href="arquivos/aula02-slides.pdf"
+               class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
+              📄 Slides (PDF)
+            </a>
+            <a href="arquivos/aula02-codigo.zip"
+               class="block bg-red-600 px-4 py-2 rounded hover:bg-red-700">
+              💻 Código da Aula (ZIP)
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRABALHOS -->
+    <section id="trabalhos">
+      <h2 class="text-2xl font-bold text-red-500 mb-6">🧪 Trabalhos</h2>
+
+      <div class="bg-gray-900 rounded-lg p-6 space-y-4 border border-gray-800">
+        <a href="arquivos/trabalho01.pdf"
+           class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800">
+          📝 Trabalho 01 – Enunciado (PDF)
+        </a>
+        <a href="arquivos/modelo-relatorio.docx"
+           class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800">
+          📊 Modelo de Relatório (DOCX)
+        </a>
+      </div>
+    </section>
+
+    <!-- EXTRAS -->
+    <section id="extras">
+      <h2 class="text-2xl font-bold text-red-500 mb-6">📥 Materiais Extras</h2>
+
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+        <a href="arquivos/apostila.pdf"
+           class="block bg-red-800 px-4 py-3 rounded hover:bg-red-900">
+          📚 Apostila Completa (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+      <h2 class="text-2xl font-bold text-red-500 mb-2">📧 Contato</h2>
+      <p class="text-gray-300">Dúvidas?</p>
+      <p class="font-semibold mt-2">seuemail@exemplo.com</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-gray-800 text-gray-400 text-center py-4">
+    © 2026 – Materiais da Disciplina
+  </footer>
+
+  <!-- SCRIPT MENU MOBILE -->
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
