@@ -1,193 +1,312 @@
-</section>
 
-
-
-
-
-    <!-- AULAS -->
-
-    <section id="aulas">
-
-      <h2 class="text-2xl font-bold text-red-500 mb-6">📂 Aulas</h2>
-
-
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-
-
-        <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-
-          <h3 class="text-xl font-semibold mb-4">📘 Aula 01 – Introdução</h3>
-
-          <div class="space-y-3">
-
-            <a href="arquivos/aula01-slides.pdf"
-
-               class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
-
-              📄 Slides (PDF)
-
-            </a>
-
-            <a href="arquivos/aula01-exercicios.pdf"
-
-               class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
-
-              📝 Exercícios (PDF)
-
-            </a>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-
-          <h3 class="text-xl font-semibold mb-4">📘 Aula 02 – Conteúdo Principal</h3>
-
-          <div class="space-y-3">
-
-            <a href="arquivos/aula02-slides.pdf"
-
-               class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
-
-              📄 Slides (PDF)
-
-            </a>
-
-            <a href="arquivos/aula02-codigo.zip"
-
-               class="block bg-red-600 px-4 py-2 rounded hover:bg-red-700">
-
-              💻 Código da Aula (ZIP)
-
-            </a>
-
-          </div>
-
-        </div>
-
-    <!-- MONITORIA -->
-
-<section id="monitoria">
-
-  <h2 class="text-2xl font-bold text-red-500 mb-6">🎥 Monitoria</h2>
-
-
-
-      </div>
-
-    </section>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-
-
-    <!-- TRABALHOS -->
-
-    <!-- <section id="trabalhos">
-
-      <h2 class="text-2xl font-bold text-red-500 mb-6">🧪 Trabalhos</h2>
-
-
-
-      <div class="bg-gray-900 rounded-lg p-6 space-y-4 border border-gray-800">
-
-        <a href="arquivos/trabalho01.pdf"
-
-           class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800">
-
-          📝 Trabalho 01 – Enunciado (PDF)
-
-        </a>
-
-        <a href="arquivos/modelo-relatorio.docx"
-
-           class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800">
-
-          📊 Modelo de Relatório (DOCX)
-
-        </a>
-
-      </div>
-
-    </section> -->
-
-    <!-- Monitoria dia 18/05 -->
-
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-
-      <h3 class="text-xl font-semibold mb-4">📘 Monitoria 01 – Tema da Aula</h3>
-
-
-
-      <a href="https://drive.google.com/file/d/1fu8kISZ2VrtcNdBY_wMpIsGisoZkZZLA/view?usp=sharing"
-
-         target="_blank"
-
-         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
-
-        ▶ Assistir Vídeo
-
-      </a>
-
-    </div>
-
-
-
-    <!-- Vídeo 02 -->
-
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-
-      <h3 class="text-xl font-semibold mb-4">📘 Monitoria 02 – Tema da Aula</h3>
-
-
-
-      <a href="LINK_DO_DRIVE_AQUI"
-
-         target="_blank"
-
-         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
-
-        ▶ Assistir Vídeo
-
-      </a>
-
-    </div>
-
-
-
-    <!-- Vídeo 03 -->
-
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-
-      <h3 class="text-xl font-semibold mb-4">📘 Monitoria 03 – Tema da Aula</h3>
-
-
-
-      <a href="LINK_DO_DRIVE_AQUI"
-
-         target="_blank"
-
-         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
-
-        ▶ Assistir Vídeo
-
-      </a>
-
-    </div>
-
-
-
-  </div>
-
-</section>
-
-
-
-<!-- CONTATO -->
-
-<section id="contato" class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Institucional</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f9fc;
+            color: #263449;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 22px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e8edf3;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 700;
+            color: #23466c;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #52647a;
+            padding: 11px 22px;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #eaf1f8;
+            color: #23466c;
+        }
+
+        .hero {
+            padding: 105px 8% 110px;
+            background: linear-gradient(120deg, #edf4fb, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tag {
+            color: #527da5;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 58px);
+            line-height: 1.15;
+            color: #203b59;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #65758a;
+            max-width: 680px;
+        }
+
+        .section {
+            padding: 85px 8%;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #23466c;
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            color: #718096;
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin-bottom: 38px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 32px;
+            border: 1px solid #e8edf3;
+            border-radius: 13px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(35, 70, 108, 0.08);
+        }
+
+        .card-number {
+            color: #7b9cbd;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            color: #294968;
+            margin-bottom: 13px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #718096;
+            line-height: 1.7;
+        }
+
+        .light-section {
+            background: #edf3f9;
+        }
+
+        .footer {
+            background: #ffffff;
+            border-top: 1px solid #e8edf3;
+            padding: 30px 8%;
+            text-align: center;
+            color: #8a98a9;
+            font-size: 13px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                padding: 10px 14px;
+            }
+
+            .hero {
+                padding: 75px 7%;
+            }
+
+            .section {
+                padding: 65px 7%;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PORTAL</div>
+
+        <nav>
+            <a href="#lar" class="active">Lar</a>
+            <a href="#ensino">Ensino</a>
+            <a href="#pesquisa">Pesquisa</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="lar">
+            <div class="hero-content">
+                <div class="tag">Conhecimento e desenvolvimento</div>
+
+                <h1>Conhecimento que transforma.</h1>
+
+                <p>
+                    Um espaço dedicado à construção do conhecimento,
+                    à formação acadêmica e ao desenvolvimento da pesquisa.
+                    Explore nossas áreas e conheça nossas iniciativas.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="ensino">
+            <h2 class="section-title">Ensino</h2>
+
+            <p class="section-description">
+                A formação e a educação como instrumentos fundamentais
+                para o desenvolvimento intelectual e social.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-number">01 / FORMAÇÃO</div>
+                    <h3>Formação acadêmica</h3>
+                    <p>
+                        Espaço dedicado à formação, ao aprendizado
+                        e ao desenvolvimento acadêmico.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-number">02 / CONTEÚDO</div>
+                    <h3>Materiais didáticos</h3>
+                    <p>
+                        Acesso a conteúdos, materiais de estudo
+                        e recursos educacionais.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-number">03 / ATIVIDADES</div>
+                    <h3>Projetos educacionais</h3>
+                    <p>
+                        Conheça projetos, atividades e iniciativas
+                        voltadas à educação.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section light-section" id="pesquisa">
+            <h2 class="section-title">Pesquisa</h2>
+
+            <p class="section-description">
+                A investigação científica como caminho para a produção
+                de conhecimento, inovação e novas descobertas.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-number">01 / PRODUÇÃO</div>
+                    <h3>Projetos de pesquisa</h3>
+                    <p>
+                        Conheça os projetos desenvolvidos
+                        e suas respectivas linhas de investigação.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-number">02 / PUBLICAÇÕES</div>
+                    <h3>Produção científica</h3>
+                    <p>
+                        Artigos, trabalhos acadêmicos,
+                        relatórios e publicações.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-number">03 / DESENVOLVIMENTO</div>
+                    <h3>Iniciação científica</h3>
+                    <p>
+                        Oportunidades e atividades relacionadas
+                        à iniciação científica e à formação de pesquisadores.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        © 2026 — Portal Institucional. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav a');
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                links.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
