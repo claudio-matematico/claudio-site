@@ -1,224 +1,147 @@
 <!-- ========================================== -->
-<!-- SEÇÃO DE PERFIL / HERO (COM FOTO)           -->
+<!-- ENSINO                                     -->
 <!-- ========================================== -->
-<section id="perfil" class="bg-gray-900 rounded-xl p-8 border border-gray-800 shadow-xl mb-12">
-  <div class="flex flex-col md:flex-row items-center gap-8">
-    <!-- Foto de Perfil -->
-    <div class="relative shrink-0">
-      <img src="sua-foto.jpg" alt="Foto de Perfil" class="w-40 h-40 rounded-full object-cover border-4 border-red-500 shadow-lg">
-    </div>
+<section id="ensino" class="space-y-8 mb-12">
+  <h2 class="text-3xl font-bold text-red-500 border-b border-gray-800 pb-3">🎓 Ensino</h2>
 
-    <!-- Informações Pessoais / Acadêmicas -->
-    <div class="space-y-3 text-center md:text-left">
-      <h1 class="text-3xl font-extrabold text-white">Seu Nome Aqui</h1>
-      <p class="text-lg font-medium text-red-400">Professor / Pesquisador</p>
-      <p class="text-gray-300 text-sm max-w-2xl leading-relaxed">
-        Breve biografia ou apresentação acadêmica. Descrição das suas áreas de atuação, departamento, instituição de ensino e interesses de pesquisa.
-      </p>
-      
-      <!-- Redes / Links Acadêmicos -->
-      <div class="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
-        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
-          📜 Currículo Lattes
-        </a>
-        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
-          🆔 ORCID
-        </a>
-        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
-          💻 GitHub
-        </a>
-        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
-          🎓 Google Scholar
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================== -->
-<!-- SEÇÃO 1: ENSINO                            -->
-<!-- ========================================== -->
-<section id="ensino" class="space-y-10 mb-16">
-  <div class="border-b border-gray-800 pb-4">
-    <h2 class="text-3xl font-bold text-red-500 flex items-center gap-3">
-      <span>🎓</span> Ensino & Disciplinas
-    </h2>
-    <p class="text-gray-400 text-sm mt-1">Materiais didáticos, gravações de monitoria e roteiros de trabalhos.</p>
-  </div>
-
-  <!-- Aulas -->
-  <div class="space-y-4">
-    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>📂</span> Material das Aulas
-    </h3>
-
+  <!-- AULAS -->
+  <div id="aulas" class="space-y-4">
+    <h3 class="text-2xl font-bold text-red-500">📂 Aulas</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg">
-        <h4 class="text-lg font-semibold text-white mb-4">📘 Aula 01 – Introdução</h4>
+
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+        <h4 class="text-xl font-semibold mb-4">📘 Aula 01 – Introdução</h4>
         <div class="space-y-3">
           <a href="arquivos/aula01-slides.pdf"
-             class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
-            <span>📄 Slides de Apresentação</span>
-            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+             class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
+            📄 Slides (PDF)
           </a>
           <a href="arquivos/aula01-exercicios.pdf"
-             class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
-            <span>📝 Lista de Exercícios</span>
-            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+             class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
+            📝 Exercícios (PDF)
           </a>
         </div>
       </div>
 
-      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg">
-        <h4 class="text-lg font-semibold text-white mb-4">📘 Aula 02 – Conteúdo Principal</h4>
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+        <h4 class="text-xl font-semibold mb-4">📘 Aula 02 – Conteúdo Principal</h4>
         <div class="space-y-3">
           <a href="arquivos/aula02-slides.pdf"
-             class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
-            <span>📄 Slides de Apresentação</span>
-            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+             class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
+            📄 Slides (PDF)
           </a>
           <a href="arquivos/aula02-codigo.zip"
-             class="flex items-center justify-between bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
-            <span>💻 Código da Aula</span>
-            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">ZIP</span>
+             class="block bg-red-600 px-4 py-2 rounded hover:bg-red-700">
+            💻 Código da Aula (ZIP)
           </a>
         </div>
       </div>
+
     </div>
   </div>
 
-  <!-- Monitoria -->
-  <div class="space-y-4">
-    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>🎥</span> Monitoria
-    </h3>
-
+  <!-- MONITORIA -->
+  <div id="monitoria" class="space-y-4">
+    <h3 class="text-2xl font-bold text-red-500">🎥 Monitoria</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-2">📘 Monitoria 01 – Tema da Aula</h4>
-        </div>
+
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800 flex flex-col justify-between">
+        <h4 class="text-xl font-semibold mb-4">📘 Monitoria 01 – Tema da Aula</h4>
         <a href="https://drive.google.com/file/d/1fu8kISZ2VrtcNdBY_wMpIsGisoZkZZLA/view?usp=sharing"
            target="_blank"
-           rel="noopener noreferrer"
-           class="block bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg text-center transition-colors">
+           class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
           ▶ Assistir Vídeo
         </a>
       </div>
 
-      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-2">📘 Monitoria 02 – Tema da Aula</h4>
-        </div>
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800 flex flex-col justify-between">
+        <h4 class="text-xl font-semibold mb-4">📘 Monitoria 02 – Tema da Aula</h4>
         <a href="LINK_DO_DRIVE_AQUI"
            target="_blank"
-           rel="noopener noreferrer"
-           class="block bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg text-center transition-colors">
+           class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
           ▶ Assistir Vídeo
         </a>
       </div>
 
-      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
-        <div>
-          <h4 class="text-lg font-semibold text-white mb-2">📘 Monitoria 03 – Tema da Aula</h4>
-        </div>
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800 flex flex-col justify-between">
+        <h4 class="text-xl font-semibold mb-4">📘 Monitoria 03 – Tema da Aula</h4>
         <a href="LINK_DO_DRIVE_AQUI"
            target="_blank"
-           rel="noopener noreferrer"
-           class="block bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg text-center transition-colors">
+           class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
           ▶ Assistir Vídeo
         </a>
       </div>
+
     </div>
   </div>
 
-  <!-- Trabalhos -->
-  <div class="space-y-4">
-    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>🧪</span> Trabalhos
-    </h3>
-
-    <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-4">
+  <!-- TRABALHOS -->
+  <div id="trabalhos" class="space-y-4">
+    <h3 class="text-2xl font-bold text-red-500">🧪 Trabalhos</h3>
+    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800 grid grid-cols-1 md:grid-cols-2 gap-4">
       <a href="arquivos/trabalho01.pdf"
-         class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-5 py-3 rounded-lg transition-colors">
-        <span>📝 Trabalho 01 – Enunciado</span>
-        <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800">
+        📝 Trabalho 01 – Enunciado (PDF)
       </a>
       <a href="arquivos/modelo-relatorio.docx"
-         class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-5 py-3 rounded-lg transition-colors">
-        <span>📊 Modelo de Relatório</span>
-        <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">DOCX</span>
+         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800">
+        📊 Modelo de Relatório (DOCX)
       </a>
     </div>
   </div>
 </section>
 
 <!-- ========================================== -->
-<!-- SEÇÃO 2: PESQUISA                          -->
+<!-- PESQUISA                                   -->
 <!-- ========================================== -->
-<section id="pesquisa" class="space-y-10 mb-16">
-  <div class="border-b border-gray-800 pb-4">
-    <h2 class="text-3xl font-bold text-red-500 flex items-center gap-3">
-      <span>🔬</span> Pesquisa & Projetos
-    </h2>
-    <p class="text-gray-400 text-sm mt-1">Linhas de investigação acadêmica, artigos e publicações selecionadas.</p>
-  </div>
+<section id="pesquisa" class="space-y-8 mb-12">
+  <h2 class="text-3xl font-bold text-red-500 border-b border-gray-800 pb-3">🔬 Pesquisa</h2>
 
-  <!-- Linhas de Pesquisa -->
+  <!-- PROJETOS DE PESQUISA -->
   <div class="space-y-4">
-    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>📌</span> Linhas de Pesquisa
-    </h3>
-
+    <h3 class="text-2xl font-bold text-red-500">📌 Projetos & Linhas de Pesquisa</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
-        <h4 class="text-lg font-semibold text-white mb-2">Projeto / Linha 01</h4>
-        <p class="text-gray-400 text-sm leading-relaxed mb-4">
-          Descrição dos objetivos da pesquisa, metodologia e área de aplicação principal.
-        </p>
-        <span class="inline-block bg-gray-800 text-red-400 text-xs px-3 py-1 rounded-full border border-gray-700">Em andamento</span>
+
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+        <h4 class="text-xl font-semibold mb-2">Linha de Pesquisa 01</h4>
+        <p class="text-gray-400 text-sm mb-4">Descrição resumida dos objetivos da pesquisa e metodologias aplicadas.</p>
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 px-3 py-1 rounded-full">Em andamento</span>
       </div>
 
-      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
-        <h4 class="text-lg font-semibold text-white mb-2">Projeto / Linha 02</h4>
-        <p class="text-gray-400 text-sm leading-relaxed mb-4">
-          Descrição dos objetivos da pesquisa, metodologia e área de aplicação principal.
-        </p>
-        <span class="inline-block bg-gray-800 text-red-400 text-xs px-3 py-1 rounded-full border border-gray-700">Em andamento</span>
+      <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+        <h4 class="text-xl font-semibold mb-2">Linha de Pesquisa 02</h4>
+        <p class="text-gray-400 text-sm mb-4">Descrição resumida dos objetivos da pesquisa e metodologias aplicadas.</p>
+        <span class="text-xs bg-red-950 text-red-400 border border-red-800 px-3 py-1 rounded-full">Em andamento</span>
       </div>
+
     </div>
   </div>
 
-  <!-- Publicações -->
+  <!-- PUBLICAÇÕES -->
   <div class="space-y-4">
-    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>📄</span> Publicações
-    </h3>
-
-    <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg space-y-4">
-      <div class="border-b border-gray-800 pb-3 last:border-b-0 last:pb-0">
-        <h4 class="text-md font-semibold text-white">Título do Artigo Publicado 01</h4>
-        <p class="text-xs text-gray-400 mt-1">Autores • Periódico / Conferência (Ano)</p>
-        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Acessar publicação →</a>
+    <h3 class="text-2xl font-bold text-red-500">📄 Publicações Selecionadas</h3>
+    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800 space-y-4">
+      <div class="border-b border-gray-800 pb-3 last:border-0 last:pb-0">
+        <h4 class="text-lg font-semibold">Título da Publicação Científica 01</h4>
+        <p class="text-sm text-gray-400 mt-1">Autores • Conferência / Periódico (Ano)</p>
+        <a href="#" class="inline-block text-red-500 hover:underline text-sm mt-2">🔗 Acessar Artigo (PDF / DOI)</a>
       </div>
-      <div class="border-b border-gray-800 pb-3 last:border-b-0 last:pb-0">
-        <h4 class="text-md font-semibold text-white">Título do Artigo Publicado 02</h4>
-        <p class="text-xs text-gray-400 mt-1">Autores • Periódico / Conferência (Ano)</p>
-        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Acessar publicação →</a>
+      <div class="border-b border-gray-800 pb-3 last:border-0 last:pb-0">
+        <h4 class="text-lg font-semibold">Título da Publicação Científica 02</h4>
+        <p class="text-sm text-gray-400 mt-1">Autores • Conferência / Periódico (Ano)</p>
+        <a href="#" class="inline-block text-red-500 hover:underline text-sm mt-2">🔗 Acessar Artigo (PDF / DOI)</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ========================================== -->
-<!-- SEÇÃO 3: CONTATO                           -->
+<!-- CONTATO                                    -->
 <!-- ========================================== -->
-<section id="contato" class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
-  <h2 class="text-2xl font-bold text-red-500 mb-4 flex items-center gap-2">
-    <span>✉️</span> Contato
-  </h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-300">
-    <p>📧 <strong class="text-white">E-mail:</strong> seu.email@universidade.edu.br</p>
-    <p>🏢 <strong class="text-white">Gabinete:</strong> Sala X - Bloco Y</p>
+<section id="contato" class="bg-gray-900 rounded-lg p-6 border border-gray-800">
+  <h2 class="text-2xl font-bold text-red-500 mb-4">✉️ Contato</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm">
+    <p>📧 <strong class="text-white">E-mail:</strong> seu.email@instituicao.edu.br</p>
+    <p>🏢 <strong class="text-white">Gabinete:</strong> Sala X, Bloco Y</p>
   </div>
 </section>
