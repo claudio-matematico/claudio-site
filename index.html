@@ -1,207 +1,192 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Materiais da Disciplina</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- ========================================== -->
+<!-- SEÇÃO 1: ENSINO                            -->
+<!-- ========================================== -->
+<section id="ensino" class="space-y-10 mb-16">
+  <div class="border-b border-gray-800 pb-4">
+    <h2 class="text-3xl font-bold text-red-500 flex items-center gap-3">
+      <span>🎓</span> Ensino & Disciplinas
+    </h2>
+    <p class="text-gray-400 text-sm mt-1">Materiais didáticos, gravações de monitoria e roteiros de trabalhos.</p>
+  </div>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <!-- Aulas -->
+  <div class="space-y-4">
+    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
+      <span>📂</span> Material das Aulas
+    </h3>
 
-<body class="bg-black text-gray-200">
-
-  <!-- NAVBAR -->
-  <header class="bg-red-700 text-white shadow-lg">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-
-      <!-- LOGO / FOTO -->
-      <div class="flex items-center space-x-3">
-        <!-- <img
-          src="foto-professor.jpg"
-          alt="Foto do Professor"
-          class="w-10 h-10 rounded-full object-cover border-2 border-white"
-        /> -->
-        <span class="font-bold text-lg">Materiais da Disciplina</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg">
+        <h4 class="text-lg font-semibold text-white mb-4">📘 Aula 01 – Introdução</h4>
+        <div class="space-y-3">
+          <a href="arquivos/aula01-slides.pdf"
+             class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
+            <span>📄 Slides de Apresentação</span>
+            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+          </a>
+          <a href="arquivos/aula01-exercicios.pdf"
+             class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
+            <span>📝 Lista de Exercícios</span>
+            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+          </a>
+        </div>
       </div>
 
-      <!-- BOTÃO MOBILE -->
-      <button
-        id="menuBtn"
-        class="md:hidden focus:outline-none text-2xl"
-      >
-        ☰
-      </button>
-
-      <!-- MENU DESKTOP -->
-      <nav class="hidden md:flex space-x-6 font-medium">
-        <a href="#aulas" class="hover:text-gray-300">Aulas</a>
-        <a href="#contato" class="hover:text-gray-300">Contato</a>
-      </nav>
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg">
+        <h4 class="text-lg font-semibold text-white mb-4">📘 Aula 02 – Conteúdo Principal</h4>
+        <div class="space-y-3">
+          <a href="arquivos/aula02-slides.pdf"
+             class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
+            <span>📄 Slides de Apresentação</span>
+            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+          </a>
+          <a href="arquivos/aula02-codigo.zip"
+             class="flex items-center justify-between bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2.5 rounded-lg transition-colors">
+            <span>💻 Código da Aula</span>
+            <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">ZIP</span>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- MENU MOBILE -->
-    <nav
-      id="mobileMenu"
-      class="hidden md:hidden bg-red-800 px-4 pb-4 space-y-2"
-    >
-      <a href="#aulas" class="block hover:text-gray-300">Aulas</a>
-      <a href="#trabalhos" class="block hover:text-gray-300">Trabalhos</a>
-      <a href="#extras" class="block hover:text-gray-300">Extras</a>
-      <a href="#contato" class="block hover:text-gray-300">Contato</a>
-    </nav>
-  </header>
+  <!-- Monitorias -->
+  <div class="space-y-4">
+    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
+      <span>🎥</span> Gravacões de Monitoria
+    </h3>
 
-  <!-- HERO -->
-  <section class="bg-gradient-to-b from-black to-red-900">
-    <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center gap-6">
-      <img
-        src="claudio.jpg"
-        alt="Foto do Professor"
-        class="w-32 h-32 md:w-40 md:h-40 rounded-lg object-cover border-4 border-red-600 shadow-lg"
-      />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-2">Monitoria 01</h4>
+          <p class="text-sm text-gray-400 mb-4">Resolução de dúvidas e revisão da Aula 01.</p>
+        </div>
+        <a href="https://drive.google.com/file/d/1fu8kISZ2VrtcNdBY_wMpIsGisoZkZZLA/view?usp=sharing"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="block bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg text-center transition-colors">
+          ▶ Assistir Vídeo
+        </a>
+      </div>
 
-      <div class="text-center md:text-left">
-        <h2 class="text-3xl font-bold mb-2">Bem-vindo(a)!</h2>
-        <p class="text-gray-300 max-w-xl">
-          Olá, meu nome é Cláudio e sou estudante de Bacharelado em Matemática na  Universidade Estadual de Campinas (UNICAMP). Neste site, publicarei minhas notas de aulas e exercícios antigos. 
-          Aqui você encontra todos os <strong>materiais da disciplina</strong>
-          organizados para download.
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-2">Monitoria 02</h4>
+          <p class="text-sm text-gray-400 mb-4">Exercícios práticos de implementação.</p>
+        </div>
+        <a href="LINK_DO_DRIVE_AQUI"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="block bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg text-center transition-colors">
+          ▶ Assistir Vídeo
+        </a>
+      </div>
+
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-2">Monitoria 03</h4>
+          <p class="text-sm text-gray-400 mb-4">Preparatório para o Trabalho 01.</p>
+        </div>
+        <a href="LINK_DO_DRIVE_AQUI"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="block bg-red-700 hover:bg-red-800 text-white font-medium px-4 py-2.5 rounded-lg text-center transition-colors">
+          ▶ Assistir Vídeo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trabalhos -->
+  <div class="space-y-4">
+    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
+      <span>🧪</span> Trabalhos e Projetos
+    </h3>
+
+    <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-4">
+      <a href="arquivos/trabalho01.pdf"
+         class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-5 py-3 rounded-lg transition-colors">
+        <span>📝 Trabalho 01 – Enunciado</span>
+        <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">PDF</span>
+      </a>
+      <a href="arquivos/modelo-relatorio.docx"
+         class="flex items-center justify-between bg-red-700 hover:bg-red-800 text-white font-medium px-5 py-3 rounded-lg transition-colors">
+        <span>📊 Modelo de Relatório</span>
+        <span class="text-xs bg-red-900/60 px-2 py-1 rounded uppercase">DOCX</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SEÇÃO 2: PESQUISA                          -->
+<!-- ========================================== -->
+<section id="pesquisa" class="space-y-10 mb-16">
+  <div class="border-b border-gray-800 pb-4">
+    <h2 class="text-3xl font-bold text-red-500 flex items-center gap-3">
+      <span>🔬</span> Pesquisa & Desenvolvimento
+    </h2>
+    <p class="text-gray-400 text-sm mt-1">Linhas de investigação, publicações relevantes e projetos acadêmicos.</p>
+  </div>
+
+  <!-- Linhas de Pesquisa -->
+  <div class="space-y-4">
+    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
+      <span>📌</span> Linhas de Pesquisa
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
+        <h4 class="text-lg font-semibold text-white mb-2">Projeto / Linha 01</h4>
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+          Descrição sucinta dos objetivos principais, metodologia e impacto esperado desta área de investigação acadêmica.
         </p>
+        <span class="inline-block bg-gray-800 text-red-400 text-xs px-3 py-1 rounded-full border border-gray-700">Em andamento</span>
+      </div>
+
+      <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
+        <h4 class="text-lg font-semibold text-white mb-2">Projeto / Linha 02</h4>
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+          Descrição sucinta dos objetivos principais, metodologia e impacto esperado desta área de investigação acadêmica.
+        </p>
+        <span class="inline-block bg-gray-800 text-red-400 text-xs px-3 py-1 rounded-full border border-gray-700">Em andamento</span>
       </div>
     </div>
-  </section>
-  <!-- MANUAL DE CONDUTA -->
-<section id="manual">
-  <h2 class="text-2xl font-bold text-red-500 mb-6">📂 Manual de Conduta 2026</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <a href="https://drive.google.com/file/d/1WK6JJjpdm86PpcYwmDGz6xstYT8IoJFp/view?usp=drive_link"
-         class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
-        📄 Manual de Conduta 2026 (PDF)
-      </a>
+  </div>
+
+  <!-- Publicações em Destaque -->
+  <div class="space-y-4">
+    <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
+      <span>📄</span> Publicações Selecionadas
+    </h3>
+
+    <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg space-y-4">
+      <div class="border-b border-gray-800 pb-3 last:border-b-0 last:pb-0">
+        <h4 class="text-md font-semibold text-white">Título do Artigo ou Publicação Científica 01</h4>
+        <p class="text-xs text-gray-400 mt-1">Autores • Conferência / Periódico (Ano)</p>
+        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Ler artigo (PDF/DOI) →</a>
+      </div>
+
+      <div class="border-b border-gray-800 pb-3 last:border-b-0 last:pb-0">
+        <h4 class="text-md font-semibold text-white">Título do Artigo ou Publicação Científica 02</h4>
+        <p class="text-xs text-gray-400 mt-1">Autores • Conferência / Periódico (Ano)</p>
+        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Ler artigo (PDF/DOI) →</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CRONOGRAMA -->
-<section id="cronograma">
-  <h2 class="text-2xl font-bold text-red-500 mb-6">📂 Cronograma 2026</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <a href="https://drive.google.com/file/d/1cGktFc-LzvppmzUVwenAMVFC1WJV2I36/view?usp=drive_link"
-         class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
-        📄 Cronograma 2026 (PDF)
-      </a>
-    </div>
+<!-- ========================================== -->
+<!-- SEÇÃO 3: CONTATO                           -->
+<!-- ========================================== -->
+<section id="contato" class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
+  <h2 class="text-2xl font-bold text-red-500 mb-4 flex items-center gap-2">
+    <span>✉️</span> Contato & Atendimento
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-300">
+    <p>📧 <strong class="text-white">E-mail:</strong> seu.email@universidade.edu.br</p>
+    <p>🏢 <strong class="text-white">Gabinete:</strong> Sala X - Bloco Y</p>
+    <p>🕒 <strong class="text-white">Horário de Atendimento:</strong> Terças e Quintas, 14h - 16h</p>
   </div>
 </section>
-
-<!-- APOSTILA -->
-<section id="apostila">
-  <h2 class="text-2xl font-bold text-red-500 mb-6">📂 Apostila</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <a href=https://drive.google.com/file/d/1_B-Vo7Sf3jOMLjG6ldR7pkNfvbZQUU2B/view?usp=sharing
-         class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
-        📄 Apostila (PDF)
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- LISTA DE EXERCÍCIOS -->
-<section id="lista">
-  <h2 class="text-2xl font-bold text-red-500 mb-6">📂 Lista 2026</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <a href="https://drive.google.com/file/d/1erGdCN3-rG1wCYMJRhlHDmjVZPGA10Fv/view?usp=drive_link"
-         class="block bg-red-700 px-4 py-2 rounded hover:bg-red-800">
-        📄 Lista (PDF)
-      </a>
-    </div>
-  </div>
-</section>
-
-  <!-- GABARITOS -->
-<section id="gabaritos">
-  <h2 class="text-2xl font-bold text-green-500 mb-6">✅ Gabaritos</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <a href="https://drive.google.com/file/d/1_HMm9k3Up3sVQMqrBGrL1W0ODqmu-h2N/view?usp=sharing"
-         class="block bg-green-700 px-4 py-2 rounded hover:bg-green-800">
-        📄 Gabarito Teste 1 (PDF)
-      </a>
-    </div>
-  </div>
-</section>
-
-
-    <!-- MONITORIA -->
-<section id="monitoria">
-  <h2 class="text-2xl font-bold text-red-500 mb-6">🎥 Monitoria</h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-    <!-- Monitoria dia 18/05 -->
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <h3 class="text-xl font-semibold mb-4">📘 Monitoria 01 – Tema da Aula</h3>
-
-      <a href="https://drive.google.com/file/d/1fu8kISZ2VrtcNdBY_wMpIsGisoZkZZLA/view?usp=sharing"
-         target="_blank"
-         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
-        ▶ Assistir Vídeo
-      </a>
-    </div>
-
-    <!-- Vídeo 02 -->
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <h3 class="text-xl font-semibold mb-4">📘 Monitoria 02 – Tema da Aula</h3>
-
-      <a href="LINK_DO_DRIVE_AQUI"
-         target="_blank"
-         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
-        ▶ Assistir Vídeo
-      </a>
-    </div>
-
-    <!-- Vídeo 03 -->
-    <div class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <h3 class="text-xl font-semibold mb-4">📘 Monitoria 03 – Tema da Aula</h3>
-
-      <a href="LINK_DO_DRIVE_AQUI"
-         target="_blank"
-         class="block bg-red-700 px-4 py-3 rounded hover:bg-red-800 text-center">
-        ▶ Assistir Vídeo
-      </a>
-    </div>
-
-  </div>
-</section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="bg-gray-900 rounded-lg p-6 border border-gray-800">
-      <h2 class="text-2xl font-bold text-red-500 mb-2">📧 Contato</h2>
-      <p class="text-gray-300">Dúvidas?</p>
-      <p class="font-semibold mt-2">c270260@dac.unicamp.br</p>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="bg-black border-t border-gray-800 text-gray-400 text-center py-4">
-    © 2026 – Materiais da Disciplina
-  </footer>
-
-  <!-- SCRIPT MENU MOBILE -->
-  <script>
-    const btn = document.getElementById("menuBtn");
-    const menu = document.getElementById("mobileMenu");
-
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-  </script>
-
-</body>
-</html>
