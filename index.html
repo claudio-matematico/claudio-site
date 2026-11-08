@@ -2,454 +2,553 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cláudio Ezequiel | Matemática</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal acadêmico pessoal: Matemática, ensino e pesquisa.">
+  <title>Cláudio Ezequiel | Matemática, Ensino e Pesquisa</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f7f9fc;
-    color: #26384b;
-    line-height: 1.7;
-}
-
-header {
-    background: white;
-    border-bottom: 1px solid #e5ebf1;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #315f87;
-    font-size: 21px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-nav {
-    display: flex;
-    gap: 12px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #53677b;
-    padding: 10px 18px;
-    border-radius: 8px;
-    transition: .3s;
-}
-
-nav a:hover {
-    background: #eaf2f8;
-    color: #315f87;
-}
-
-.container {
-    max-width: 1150px;
-    margin: auto;
-    padding: 0 25px;
-}
-
-.hero {
-    padding: 90px 0;
-    background: linear-gradient(120deg, #edf4fb, white);
-}
-
-.hero-content {
-    display: grid;
-    grid-template-columns: 1.3fr .7fr;
-    align-items: center;
-    gap: 60px;
-}
-
-.tag {
-    color: #527da5;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: clamp(38px, 5vw, 58px);
-    line-height: 1.15;
-    color: #203b59;
-    margin-bottom: 22px;
-}
-
-.hero p {
-    color: #68798b;
-    font-size: 18px;
-}
-
-.photo {
-    width: 100%;
-    max-width: 370px;
-    height: 440px;
-    object-fit: cover;
-    object-position: center 38%;
-    border-radius: 18px;
-    box-shadow: 0 15px 40px #203b5920;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 23px;
-    background: #315f87;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: .3s;
-}
-
-.button:hover {
-    background: #234968;
-    transform: translateY(-2px);
-}
-
-section {
-    padding: 80px 0;
-}
-
-.section-title {
-    font-size: 34px;
-    color: #23466c;
-    margin-bottom: 12px;
-}
-
-.description {
-    color: #718096;
-    max-width: 720px;
-    margin-bottom: 35px;
-}
-
-.bio-grid {
-    display: grid;
-    grid-template-columns: 1.5fr .7fr;
-    gap: 35px;
-}
-
-.bio-text p {
-    color: #617286;
-    margin-bottom: 18px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-}
-
-.card {
-    background: white;
-    padding: 30px;
-    border: 1px solid #e5ebf1;
-    border-radius: 13px;
-    transition: .3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px #23466c12;
-}
-
-.card h3 {
-    color: #315f87;
-    margin-bottom: 12px;
-}
-
-.card p {
-    color: #718096;
-    font-size: 15px;
-}
-
-.number {
-    color: #8ba6bd;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-.info {
-    background: white;
-    border: 1px solid #e5ebf1;
-    border-radius: 13px;
-    padding: 28px;
-}
-
-.info h3 {
-    color: #315f87;
-    margin-bottom: 10px;
-}
-
-.info p {
-    color: #718096;
-}
-
-.light {
-    background: #edf3f8;
-}
-
-footer {
-    background: white;
-    border-top: 1px solid #e5ebf1;
-    padding: 30px;
-    text-align: center;
-    color: #8a98a9;
-    font-size: 13px;
-}
-
-@media(max-width: 750px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
+  <style>
+    :root {
+      --ink: #20364d;
+      --muted: #68798b;
+      --blue: #315f87;
+      --blue-soft: #eaf2f8;
+      --paper: #f7f9fc;
+      --white: #fff;
+      --line: #e5ebf1;
     }
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
     }
 
-    .hero-content,
-    .bio-grid,
-    .cards {
-        grid-template-columns: 1fr;
+    body {
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.65;
     }
 
-    .photo {
-        max-width: 320px;
-        height: 380px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* MENU SUPERIOR */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 1160px;
+      margin: auto;
+      padding: 17px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      color: var(--blue);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .navlinks a {
+      padding: 9px 16px;
+      border-radius: 999px;
+      color: #53677b;
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    .navlinks a:hover {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    .wrap {
+      max-width: 1160px;
+      margin: auto;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    /* APRESENTAÇÃO: BIOGRAFIA À ESQUERDA E FOTO À DIREITA */
+    .hero {
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      align-items: center;
+      gap: 54px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
     }
 
     h1 {
-        font-size: 40px;
+      font-size: clamp(38px, 5.5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -.045em;
+      margin-bottom: 22px;
     }
-}
-</style>
+
+    .hero-copy {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 690px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 650;
+      transition: .2s ease;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #244b6e;
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      border: 1px solid #d8e1e9;
+      color: var(--blue);
+      background: white;
+    }
+
+    .btn-ghost:hover {
+      background: var(--blue-soft);
+    }
+
+    .portrait-frame {
+      background: #e7eef4;
+      padding: 10px;
+      border-radius: 22px;
+      box-shadow: 0 22px 55px rgba(39, 67, 93, .12);
+      max-width: 390px;
+      justify-self: end;
+    }
+
+    .portrait {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center 38%;
+      border-radius: 15px;
+    }
+
+    /* SEÇÕES */
+    section.content {
+      padding-top: 78px;
+      padding-bottom: 78px;
+    }
+
+    .soft {
+      background: #edf3f8;
+    }
+
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 34px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(29px, 3.5vw, 40px);
+      letter-spacing: -.03em;
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 38px;
+      align-items: start;
+    }
+
+    .bio-text p {
+      color: #5e7083;
+      margin-bottom: 16px;
+    }
+
+    /* CARTÕES */
+    .info-card,
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .info-card h3,
+    .card h3 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .info-card p,
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 32px rgba(39,67,93,.07);
+    }
+
+    .number {
+      color: #8ba6bd;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .12em;
+      margin-bottom: 13px;
+    }
+
+    /* RODAPÉ */
+    .footer {
+      padding: 28px;
+      text-align: center;
+      color: #8a98a7;
+      font-size: 13px;
+      background: white;
+      border-top: 1px solid var(--line);
+    }
+
+    /* ADAPTAÇÃO PARA CELULARES */
+    @media (max-width: 760px) {
+      .nav {
+        flex-direction: column;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      .hero-grid,
+      .bio-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .portrait-frame {
+        justify-self: start;
+        width: min(100%, 340px);
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section.content {
+        padding-top: 58px;
+        padding-bottom: 58px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">CLÁUDIO EZEQUIEL</div>
+  <!-- MENU -->
+  <header class="topbar">
+    <nav class="nav" aria-label="Navegação principal">
 
-    <nav>
+      <a class="brand" href="#lar">
+        CLÁUDIO EZEQUIEL
+      </a>
+
+      <div class="navlinks">
         <a href="#lar">Lar</a>
         <a href="#ensino">Ensino</a>
         <a href="#pesquisa">Pesquisa</a>
+      </div>
+
     </nav>
-</header>
+  </header>
 
-<main>
+  <main>
 
-<!-- APRESENTAÇÃO -->
-<section class="hero" id="lar">
-<div class="container hero-content">
+    <!-- APRESENTAÇÃO E BIOGRAFIA -->
+    <section class="hero wrap" id="lar">
 
-    <div>
-        <div class="tag">Matemática · Educação · Ciência</div>
+      <div class="hero-grid">
 
-        <h1>Entre a matemática, o ensino e a pesquisa.</h1>
+        <!-- BIOGRAFIA À ESQUERDA -->
+        <div>
 
-        <p>
-            Sou estudante de Matemática na Universidade Estadual
-            de Campinas (Unicamp). Tenho interesse pela construção
-            do conhecimento matemático, pela educação e pela
-            investigação científica em Sistemas Dinâmicos.
-        </p>
+          <div class="eyebrow">
+            Biografia · Matemática · Educação · Ciência
+          </div>
 
-        <a href="#biografia" class="button">
-            Conheça minha trajetória
-        </a>
-    </div>
+          <h1>Cláudio Ezequiel</h1>
 
-    <div>
-        <img src="Foto.jpg"
-             alt="Fotografia de Cláudio Ezequiel"
-             class="photo">
-    </div>
+          <p class="hero-copy">
+            Sou graduando em Matemática pela Universidade Estadual de
+            Campinas (Unicamp). Minha formação tem sido marcada pelo
+            aprofundamento dos fundamentos matemáticos, pelo contato
+            com demonstrações e pelo interesse em compreender ideias e
+            estruturas com rigor.
+          </p>
 
-</div>
-</section>
+          <p class="hero-copy" style="margin-top: 15px;">
+            Na iniciação científica, estudo tópicos de Sistemas Dinâmicos,
+            com atenção especial aos sistemas dinâmicos discretos
+            unidimensionais e ao Teorema de Sharkovsky. Esse trabalho
+            tem contribuído para ampliar minha formação e aproximar
+            meu estudo de questões de pesquisa matemática.
+          </p>
 
-<!-- BIOGRAFIA -->
-<section id="biografia">
-<div class="container">
+          <p class="hero-copy" style="margin-top: 15px;">
+            Também atuo na educação popular, experiência que reforça
+            meu interesse pelo ensino e pela democratização do acesso
+            ao conhecimento. Acredito na relação entre formação
+            acadêmica, produção científica e compromisso social.
+          </p>
 
-    <div class="tag">Apresentação</div>
-    <h2 class="section-title">Biografia</h2>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#ensino">
+              Conheça minha atuação no ensino
+            </a>
 
-    <p class="description">
-        Uma trajetória construída pelo estudo, pela curiosidade
-        e pelo compromisso com a educação.
-    </p>
+            <a class="btn btn-ghost" href="#pesquisa">
+              Ver pesquisa
+            </a>
+          </div>
 
-    <div class="bio-grid">
-
-        <div class="bio-text">
-            <p>
-                Sou graduando em Matemática pela Universidade
-                Estadual de Campinas (Unicamp). Minha formação
-                tem sido marcada pelo aprofundamento dos
-                fundamentos matemáticos e pelo interesse em
-                compreender ideias e estruturas com rigor.
-            </p>
-
-            <p>
-                Na iniciação científica, estudo tópicos de
-                Sistemas Dinâmicos, com atenção especial aos
-                sistemas dinâmicos discretos unidimensionais
-                e ao Teorema de Sharkovsky.
-            </p>
-
-            <p>
-                Também atuo na educação popular, experiência
-                que reforça meu interesse pelo ensino e pela
-                democratização do acesso ao conhecimento.
-            </p>
         </div>
 
-        <div class="info">
-            <h3>Áreas de interesse</h3>
+        <!-- FOTO À DIREITA -->
+        <div class="portrait-frame">
+          <img
+            class="portrait"
+            src="Foto.jpg"
+            alt="Fotografia de Cláudio Ezequiel"
+          >
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SEÇÃO ENSINO -->
+    <section class="content soft" id="ensino">
+
+      <div class="wrap">
+
+        <div class="section-head">
+
+          <div class="eyebrow">
+            Formação e compromisso social
+          </div>
+
+          <h2>Ensino</h2>
+
+          <p>
+            O ensino como prática de construção coletiva do conhecimento
+            e transformação social.
+          </p>
+
+        </div>
+
+        <!-- APOSTILA -->
+        <div
+          class="info-card"
+          style="margin-bottom: 20px; display: flex;
+          align-items: center; justify-content: space-between;
+          gap: 22px; flex-wrap: wrap;"
+        >
+
+          <div style="flex: 1; min-width: 230px;">
+
+            <div class="number">
+              MATERIAL DIDÁTICO · VERSÃO PARCIAL
+            </div>
+
+            <h3>Apostila de Matemática</h3>
+
             <p>
-                Matemática<br>
-                Sistemas Dinâmicos<br>
-                Análise Matemática<br>
-                Educação Matemática<br>
-                Ensino e pesquisa
+              Material de apoio elaborado por Cláudio Ezequiel,
+              com conteúdos de Matemática básica, explicações,
+              exemplos e exercícios. Esta é uma versão parcial
+              da apostila.
             </p>
-        </div>
 
-    </div>
-</div>
-</section>
+          </div>
 
-<!-- ENSINO -->
-<section class="light" id="ensino">
-<div class="container">
-
-    <div class="tag">Formação e compromisso social</div>
-    <h2 class="section-title">Ensino</h2>
-
-    <p class="description">
-        O ensino como prática de construção coletiva do
-        conhecimento e transformação social.
-    </p>
-
-    <!-- APOSTILA -->
-    <div class="info" style="margin-bottom: 25px;">
-
-        <div class="number">
-            MATERIAL DIDÁTICO · VERSÃO PARCIAL
-        </div>
-
-        <h3>Apostila de Matemática</h3>
-
-        <p>
-            Material didático elaborado para auxiliar no
-            processo de aprendizagem matemática, reunindo
-            conteúdos, explicações e exercícios.
-        </p>
-
-        <a href="apostila-do-cursinho.pdf"
-           target="_blank"
-           class="button">
+          <a
+            class="btn btn-primary"
+            href="apostila-do-cursinho.pdf"
+            target="_blank"
+            rel="noopener"
+          >
             Abrir apostila (PDF)
-        </a>
+          </a>
 
-    </div>
+        </div>
 
-    <div class="cards">
+        <!-- ATUAÇÃO NO ENSINO -->
+        <div class="cards">
 
-        <div class="card">
-            <div class="number">01 / EDUCAÇÃO POPULAR</div>
+          <article class="card">
+
+            <div class="number">
+              01 / EDUCAÇÃO POPULAR
+            </div>
 
             <h3>Cursinho popular</h3>
 
             <p>
-                Atuação em um projeto de educação popular
-                pré-vestibular, contribuindo para ampliar
-                oportunidades de acesso ao ensino superior.
+              Atuação em um projeto de educação popular pré-vestibular,
+              contribuindo para ampliar oportunidades de acesso
+              ao ensino superior.
             </p>
-        </div>
 
-        <div class="card">
-            <div class="number">02 / COORDENAÇÃO</div>
+          </article>
+
+          <article class="card">
+
+            <div class="number">
+              02 / COORDENAÇÃO
+            </div>
 
             <h3>Organização pedagógica</h3>
 
             <p>
-                Experiência de coordenação e colaboração
-                na organização das atividades educacionais
-                e no acompanhamento do trabalho coletivo.
+              Experiência de coordenação e colaboração na organização
+              das atividades educacionais e no acompanhamento
+              do trabalho coletivo.
             </p>
+
+          </article>
+
         </div>
 
-    </div>
-</div>
-</section>
+      </div>
+    </section>
 
-<!-- PESQUISA -->
-<section id="pesquisa">
-<div class="container">
 
-    <div class="tag">Investigação matemática</div>
-    <h2 class="section-title">Pesquisa</h2>
+    <!-- SEÇÃO PESQUISA -->
+    <section class="content wrap" id="pesquisa">
 
-    <p class="description">
-        A investigação científica como caminho para a
-        produção de conhecimento e novas descobertas.
-    </p>
+      <div class="section-head">
 
-    <div class="cards">
-
-        <div class="card">
-            <div class="number">01 / INICIAÇÃO CIENTÍFICA</div>
-
-            <h3>Sistemas Dinâmicos</h3>
-
-            <p>
-                Estudo de sistemas dinâmicos discretos,
-                com foco no comportamento de órbitas
-                e pontos periódicos.
-            </p>
+        <div class="eyebrow">
+          Investigação matemática
         </div>
 
-        <div class="card">
-            <div class="number">02 / TEMA DE ESTUDO</div>
+        <h2>Pesquisa</h2>
 
-            <h3>Teorema de Sharkovsky</h3>
+        <p>
+          O estudo de problemas matemáticos e o desenvolvimento
+          de uma formação voltada à investigação científica.
+        </p>
 
-            <p>
-                Investigação de resultados sobre a
-                existência de órbitas periódicas em
-                sistemas dinâmicos unidimensionais.
-            </p>
-        </div>
+      </div>
 
-    </div>
-</div>
-</section>
+      <div class="cards">
 
-</main>
+        <article class="card">
 
-<footer>
+          <div class="number">
+            01 / INICIAÇÃO CIENTÍFICA
+          </div>
+
+          <h3>Sistemas Dinâmicos</h3>
+
+          <p>
+            Estudo de sistemas dinâmicos discretos, com foco
+            no comportamento de órbitas e pontos periódicos.
+          </p>
+
+        </article>
+
+        <article class="card">
+
+          <div class="number">
+            02 / TEMA DE ESTUDO
+          </div>
+
+          <h3>Teorema de Sharkovsky</h3>
+
+          <p>
+            Investigação de resultados sobre a existência
+            de órbitas periódicas em sistemas dinâmicos
+            unidimensionais.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
     © 2026 Cláudio Ezequiel · Matemática, Ensino e Pesquisa
-</footer>
+  </footer>
 
 </body>
 </html>
