@@ -1,4 +1,41 @@
 <!-- ========================================== -->
+<!-- SEÇÃO DE PERFIL / HERO (COM FOTO)           -->
+<!-- ========================================== -->
+<section id="perfil" class="bg-gray-900 rounded-xl p-8 border border-gray-800 shadow-xl mb-12">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    <!-- Foto de Perfil -->
+    <div class="relative shrink-0">
+      <img src="sua-foto.jpg" alt="Foto de Perfil" class="w-40 h-40 rounded-full object-cover border-4 border-red-500 shadow-lg">
+    </div>
+
+    <!-- Informações Pessoais / Acadêmicas -->
+    <div class="space-y-3 text-center md:text-left">
+      <h1 class="text-3xl font-extrabold text-white">Seu Nome Aqui</h1>
+      <p class="text-lg font-medium text-red-400">Professor / Pesquisador</p>
+      <p class="text-gray-300 text-sm max-w-2xl leading-relaxed">
+        Breve biografia ou apresentação acadêmica. Descrição das suas áreas de atuação, departamento, instituição de ensino e interesses de pesquisa.
+      </p>
+      
+      <!-- Redes / Links Acadêmicos -->
+      <div class="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
+        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
+          📜 Currículo Lattes
+        </a>
+        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
+          🆔 ORCID
+        </a>
+        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
+          💻 GitHub
+        </a>
+        <a href="#" class="bg-gray-800 hover:bg-gray-700 text-gray-200 text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition-colors">
+          🎓 Google Scholar
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
 <!-- SEÇÃO 1: ENSINO                            -->
 <!-- ========================================== -->
 <section id="ensino" class="space-y-10 mb-16">
@@ -50,17 +87,16 @@
     </div>
   </div>
 
-  <!-- Monitorias -->
+  <!-- Monitoria -->
   <div class="space-y-4">
     <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>🎥</span> Gravacões de Monitoria
+      <span>🎥</span> Monitoria
     </h3>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
         <div>
-          <h4 class="text-lg font-semibold text-white mb-2">Monitoria 01</h4>
-          <p class="text-sm text-gray-400 mb-4">Resolução de dúvidas e revisão da Aula 01.</p>
+          <h4 class="text-lg font-semibold text-white mb-2">📘 Monitoria 01 – Tema da Aula</h4>
         </div>
         <a href="https://drive.google.com/file/d/1fu8kISZ2VrtcNdBY_wMpIsGisoZkZZLA/view?usp=sharing"
            target="_blank"
@@ -72,8 +108,7 @@
 
       <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
         <div>
-          <h4 class="text-lg font-semibold text-white mb-2">Monitoria 02</h4>
-          <p class="text-sm text-gray-400 mb-4">Exercícios práticos de implementação.</p>
+          <h4 class="text-lg font-semibold text-white mb-2">📘 Monitoria 02 – Tema da Aula</h4>
         </div>
         <a href="LINK_DO_DRIVE_AQUI"
            target="_blank"
@@ -85,8 +120,7 @@
 
       <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-gray-700 transition-all shadow-lg flex flex-col justify-between">
         <div>
-          <h4 class="text-lg font-semibold text-white mb-2">Monitoria 03</h4>
-          <p class="text-sm text-gray-400 mb-4">Preparatório para o Trabalho 01.</p>
+          <h4 class="text-lg font-semibold text-white mb-2">📘 Monitoria 03 – Tema da Aula</h4>
         </div>
         <a href="LINK_DO_DRIVE_AQUI"
            target="_blank"
@@ -101,7 +135,7 @@
   <!-- Trabalhos -->
   <div class="space-y-4">
     <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>🧪</span> Trabalhos e Projetos
+      <span>🧪</span> Trabalhos
     </h3>
 
     <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -125,9 +159,9 @@
 <section id="pesquisa" class="space-y-10 mb-16">
   <div class="border-b border-gray-800 pb-4">
     <h2 class="text-3xl font-bold text-red-500 flex items-center gap-3">
-      <span>🔬</span> Pesquisa & Desenvolvimento
+      <span>🔬</span> Pesquisa & Projetos
     </h2>
-    <p class="text-gray-400 text-sm mt-1">Linhas de investigação, publicações relevantes e projetos acadêmicos.</p>
+    <p class="text-gray-400 text-sm mt-1">Linhas de investigação acadêmica, artigos e publicações selecionadas.</p>
   </div>
 
   <!-- Linhas de Pesquisa -->
@@ -140,7 +174,7 @@
       <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
         <h4 class="text-lg font-semibold text-white mb-2">Projeto / Linha 01</h4>
         <p class="text-gray-400 text-sm leading-relaxed mb-4">
-          Descrição sucinta dos objetivos principais, metodologia e impacto esperado desta área de investigação acadêmica.
+          Descrição dos objetivos da pesquisa, metodologia e área de aplicação principal.
         </p>
         <span class="inline-block bg-gray-800 text-red-400 text-xs px-3 py-1 rounded-full border border-gray-700">Em andamento</span>
       </div>
@@ -148,30 +182,29 @@
       <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
         <h4 class="text-lg font-semibold text-white mb-2">Projeto / Linha 02</h4>
         <p class="text-gray-400 text-sm leading-relaxed mb-4">
-          Descrição sucinta dos objetivos principais, metodologia e impacto esperado desta área de investigação acadêmica.
+          Descrição dos objetivos da pesquisa, metodologia e área de aplicação principal.
         </p>
         <span class="inline-block bg-gray-800 text-red-400 text-xs px-3 py-1 rounded-full border border-gray-700">Em andamento</span>
       </div>
     </div>
   </div>
 
-  <!-- Publicações em Destaque -->
+  <!-- Publicações -->
   <div class="space-y-4">
     <h3 class="text-xl font-semibold text-gray-200 flex items-center gap-2">
-      <span>📄</span> Publicações Selecionadas
+      <span>📄</span> Publicações
     </h3>
 
     <div class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg space-y-4">
       <div class="border-b border-gray-800 pb-3 last:border-b-0 last:pb-0">
-        <h4 class="text-md font-semibold text-white">Título do Artigo ou Publicação Científica 01</h4>
-        <p class="text-xs text-gray-400 mt-1">Autores • Conferência / Periódico (Ano)</p>
-        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Ler artigo (PDF/DOI) →</a>
+        <h4 class="text-md font-semibold text-white">Título do Artigo Publicado 01</h4>
+        <p class="text-xs text-gray-400 mt-1">Autores • Periódico / Conferência (Ano)</p>
+        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Acessar publicação →</a>
       </div>
-
       <div class="border-b border-gray-800 pb-3 last:border-b-0 last:pb-0">
-        <h4 class="text-md font-semibold text-white">Título do Artigo ou Publicação Científica 02</h4>
-        <p class="text-xs text-gray-400 mt-1">Autores • Conferência / Periódico (Ano)</p>
-        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Ler artigo (PDF/DOI) →</a>
+        <h4 class="text-md font-semibold text-white">Título do Artigo Publicado 02</h4>
+        <p class="text-xs text-gray-400 mt-1">Autores • Periódico / Conferência (Ano)</p>
+        <a href="#" class="inline-block text-red-400 hover:text-red-300 text-xs font-medium mt-2">🔗 Acessar publicação →</a>
       </div>
     </div>
   </div>
@@ -182,11 +215,10 @@
 <!-- ========================================== -->
 <section id="contato" class="bg-gray-900 rounded-xl p-6 border border-gray-800 shadow-lg">
   <h2 class="text-2xl font-bold text-red-500 mb-4 flex items-center gap-2">
-    <span>✉️</span> Contato & Atendimento
+    <span>✉️</span> Contato
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-300">
     <p>📧 <strong class="text-white">E-mail:</strong> seu.email@universidade.edu.br</p>
     <p>🏢 <strong class="text-white">Gabinete:</strong> Sala X - Bloco Y</p>
-    <p>🕒 <strong class="text-white">Horário de Atendimento:</strong> Terças e Quintas, 14h - 16h</p>
   </div>
 </section>
